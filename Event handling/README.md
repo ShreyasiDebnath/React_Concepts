@@ -127,5 +127,3 @@ Binding ensures that this inside the event handler always points to the componen
 
 - [React Event Handling Documentation](https://reactjs.org/docs/handling-events.html)
 - [React SyntheticEvent](https://reactjs.org/docs/events.html)
-
-These questions and answers should give a good understanding of how to handle events in React, and the provided links offer further reading on the topic.
