@@ -75,7 +75,7 @@ export default Greeting;
  Props are passed to components similarly to how attributes are passed to HTML elements:
 
 ```javascript
-Copy code
+
 import React from 'react';
 import Greeting from './Greeting';
 
@@ -88,7 +88,7 @@ export default App;
 ## Default Props
  Default props can be set using the defaultProps property, ensuring that a component has default values for props not provided:
 ```javascript
-Copy code
+
 import React from 'react';
 
 const Greeting = (props) => {
