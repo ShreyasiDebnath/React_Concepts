@@ -104,7 +104,7 @@ export default Greeting;
 ## Prop Types
 Prop types are used to specify the types of props that a component should receive, helping to catch bugs and improve code readability. React provides the prop-types library for this purpose.
 ```javascript
-Copy code
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
