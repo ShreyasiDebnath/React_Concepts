@@ -62,20 +62,61 @@ Binding ensures that this inside the event handler always points to the componen
      }
      ```
 
-3. **What is the difference between synthetic events in React and native events?**
+3. ### Synthetic Events in React and Native Events
 
-   **Answer:** Synthetic events in React are objects that wrap native browser events, providing a consistent interface across different browsers. This ensures that events work the same way across all browsers. React's synthetic events normalize the event properties and make them behave identically across different browsers.
+#### Synthetic Events in React
 
-   **Example:**
+**Definition:**
+- Synthetic events are a cross-browser wrapper around native events in React. They normalize the event properties and provide a consistent API for handling events in a React application.
+
+
+
+4. **Example:**
    ```jsx
    function handleClick(event) {
-     console.log(event); // This is a synthetic event
+     console.log(event); // SyntheticEvent
+     console.log(event.nativeEvent); // Native browser event
    }
 
    function App() {
      return <button onClick={handleClick}>Click me</button>;
    }
    ```
+
+
+
+#### Native Events
+
+**Definition:**
+- Native events are the standard events provided by the browser's DOM API. They are part of the native JavaScript event system.
+
+
+4. **Example:**
+   ```html
+   <button id="myButton">Click me</button>
+   <script>
+     document.getElementById('myButton').addEventListener('click', function(event) {
+       console.log(event); // NativeEvent
+     });
+   </script>
+   ```
+
+
+
+### Comparison
+
+1. **Consistency:**
+   - Synthetic events offer a consistent and normalized API, while native events can vary between browsers.
+
+2. **Performance:**
+   - Synthetic events use event pooling, which can improve performance and reduce memory usage. Native events do not use pooling.
+
+3. **Event Handling:**
+   - Synthetic events are handled within React’s ecosystem and offer a more React-centric approach to events. Native events are handled directly through the DOM API.
+
+4. **Usage:**
+   - In a React application, synthetic events are generally preferred for consistency and performance. Native events are typically used in non-React contexts or for low-level DOM manipulations.
+
 
 4. **How can you prevent the default behavior of an event in React?**
 
