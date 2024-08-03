@@ -103,4 +103,13 @@ function MyComponent() {
 
 export default MyComponent;
 ```
+### Use <Link>:
 
+When you need to navigate based on user interactions like clicking on a link.<br>
+When the navigation can be expressed declaratively in your JSX.<br>
+When you want to leverage accessibility and SEO benefits of anchor tags.<br>
+### Use useNavigate:
+
+When navigation needs to be triggered programmatically, such as after form submissions, API calls, or other side effects.<br>
+When you need to navigate based on complex conditions or logic.<br>
+When you want to pass state or perform relative navigation.
