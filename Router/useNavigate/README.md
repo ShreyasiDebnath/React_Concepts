@@ -103,13 +103,14 @@ function MyComponent() {
 
 export default MyComponent;
 ```
-### Use <Link>:
+Here's a concise comparison for when to use `<Link>` versus `useNavigate`:
 
-When you need to navigate based on user interactions like clicking on a link.<br>
-When the navigation can be expressed declaratively in your JSX.<br>
-When you want to leverage accessibility and SEO benefits of anchor tags.<br>
-### Use useNavigate:
+### Use `<Link>`:
+- **User Interactions**: Navigate through user actions like clicking on a link.
+- **Declarative Navigation**: Express navigation directly in your JSX.
+- **Accessibility & SEO**: Leverage the benefits of anchor (`<a>`) tags.
 
-When navigation needs to be triggered programmatically, such as after form submissions, API calls, or other side effects.<br>
-When you need to navigate based on complex conditions or logic.<br>
-When you want to pass state or perform relative navigation.
+### Use `useNavigate`:
+- **Programmatic Navigation**: Trigger navigation after events like form submissions or API calls.
+- **Complex Conditions**: Navigate based on complex logic or conditions.
+- **State or Relative Navigation**: Pass state or perform navigation relative to the current path.
