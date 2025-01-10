@@ -72,7 +72,7 @@ Function Components don't need binding as the context is managed naturally with 
 
 
 
-4. **Example:**
+ **Example:**
    ```jsx
    function handleClick(event) {
      console.log(event); // SyntheticEvent
@@ -92,7 +92,7 @@ Function Components don't need binding as the context is managed naturally with 
 - Native events are the standard events provided by the browser's DOM API. They are part of the native JavaScript event system.
 
 
-4. **Example:**
+ **Example:**
    ```html
    <button id="myButton">Click me</button>
    <script>
