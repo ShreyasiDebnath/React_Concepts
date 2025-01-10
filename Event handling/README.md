@@ -61,7 +61,8 @@ Binding ensures that this inside the event handler always points to the componen
        }
      }
      ```
-
+Class Components require manual binding (either in the constructor or by using arrow functions).
+Function Components don't need binding as the context is managed naturally with hooks.
 3. ### Synthetic Events in React and Native Events
 
 #### Synthetic Events in React
